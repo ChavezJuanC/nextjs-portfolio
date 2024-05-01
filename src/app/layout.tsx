@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import localfont from "next/font/local";
+import local from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const rowdies = localfont({
+  src: [{
+    path: "../../public/fonts/Rowdies-Bold.ttf",
+    weight: "700"
+  }],
+  variable: "--font-rowdies"
+
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={rowdies.variable}>
       <body className={inter.className}>{children}</body>
     </html>
   );
