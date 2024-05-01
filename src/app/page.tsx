@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <div className='flex justify-between'>
-        <div className='text-custom-blue font-rowdies pl-24 mt-16 text-5xl'>
+        <div className='text-custom-blue font-rowdies pl-24 mt-16 text-5xl underline'>
           SKRPTZ CODE
         </div>
         <div className='mt-16 mx-24'>
